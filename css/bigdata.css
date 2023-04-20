@@ -1,0 +1,121 @@
+/* CSS Document */
+
+
+/* General Style */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Header Styling */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.contact-detail a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.contact-detail a i {
+    margin-right: 8px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.border_bottom {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-link {
+    color: #313e5b;
+    font-weight: 500;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    height: 3px;
+    width: 0%;
+    background-color: #313e5b;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #313e5b;
+}
+
+.have-a-ques {
+    display: flex;
+}
+
+.q-mark {
+    margin-right: 20px;
+}
+
+.q-call {
+    display: grid;
+}
+
+.q-call a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamb-icon:focus {
+    box-shadow: none;
+}
+
+
+/*Main Content Styling*/
+
+.main-content {
+    margin-top: 104px;
+}
+
+.sub-text {
+    color: #437eeb;
+    background-color: #dbe6fb;
+    line-height: 21px;
+    padding: 8px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 991px) {
+    .topbar,
+    .have-a-ques {
+        display: none;
+    }
+    .nav-list {
+        float: right;
+        width: 50%;
+        text-align: center;
+    }
+    .nav-item {
+        padding: 10px;
+    }
+}
